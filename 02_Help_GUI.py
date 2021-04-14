@@ -15,7 +15,7 @@ class Converter:
         self.converter_frame.grid()
 
         #Temperature Conversion Heading (row 0)
-        self.temp_converter_label = Label(self.converter_frame, text = "Temperature",
+        self.temp_converter_label = Label(self.converter_frame, text = "Temperature Converter",
             font=("Arial", "16", "bold"),
             bg=background_color,
             padx=10, pady=10)
