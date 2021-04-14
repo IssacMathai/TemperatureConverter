@@ -27,7 +27,15 @@ class Converter:
 
     def help(self):
         print("You asked for help")
+        get_help = Help(self)
+        get_help.help_text.configure(text = "Help text goes here")
 
+class Help:
+    def __init__(self, partner):
+        background = "orange"
+
+        #disable help button
+        partner.help_button.config(state=DISABLED)
 
 #Main routine
 if __name__ == "__main__":
