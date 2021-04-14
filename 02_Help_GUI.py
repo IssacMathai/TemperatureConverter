@@ -11,7 +11,7 @@ class Converter:
         background_color = "light blue"
 
         #Converter Main Screen GUI...
-        self.converter_frame = Frame(width=300, height=300, bg=background_color)
+        self.converter_frame = Frame(width=300, height=300, bg=background_color, pady=10)
         self.converter_frame.grid()
 
         #Temperature Conversion Heading (row 0)
