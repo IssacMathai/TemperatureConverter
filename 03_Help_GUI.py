@@ -67,7 +67,7 @@ class Help:
         self.dismiss_btn.grid(row=2, pady=10)
 
     def close_help(self, partner):
-        # Put help button back to normal...
+        # Put help button back to normal... 
         partner.help_button.config(state=NORMAL)
         self.help_box.destroy()
         
