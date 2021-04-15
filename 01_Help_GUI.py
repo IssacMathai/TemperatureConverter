@@ -11,7 +11,7 @@ class Converter:
 if __name__ == "__main__":
     root = Tk()
     root.title("Temperature Converter")
-    something = Converter()
+    something = Converter(root)
     root.mainloop()
 
 
