@@ -1,4 +1,4 @@
-#quick component to convert degrees C to F.
+#quick component to convert degrees F to C.
 #Function takes in value, does conversion and puts answer into a list
 
 
