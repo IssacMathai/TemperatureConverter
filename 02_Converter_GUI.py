@@ -49,7 +49,7 @@ class Converter:
         self.to_f_button = Button(self.conversion_buttons_frame,
                                   text="To Fahrenheit", font="Arial 10 bold",
                                   bg="Orchid1", padx=10, pady=10,
-                                  command=lambda: self.temp_convert(-459))
+                                  command=lambda: self.temp_convert(-273))
         self.to_f_button.grid(row=0, column=1)
 
         #Answer label (row 4)
@@ -69,6 +69,25 @@ class Converter:
         self.help_button = Button(self.hist_help_frame, font="Arial 12 bold",
                                        text="Help", width=5)
         self.help_button.grid(row=0, column=1)
+
+    def temp_convert(self, to):
+        print(to)
+
+        # Retrieve amount entered into Entry field
+
+        # Check amount is a valid number
+
+        # Convert to F
+
+        # Convert to C
+
+        # Round!!
+
+        # Display answer
+
+        # Add Answer to list for History
+
+
 
 # main routine
 if __name__ == "__main__":
