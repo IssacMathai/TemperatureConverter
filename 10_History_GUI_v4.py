@@ -78,6 +78,30 @@ class history:
                                           padx=10, pady=10)
         self.history_text.grid(row=1)
 
+        # History Output goes here (row 2)
+
+        # Export / Dismiss Buttons Frame (row 3)
+        self.export_dismiss_frame = Frame(self.history_frame)
+        self.export_dismiss_frame.grid(row=3, pady=10)
+
+        # Export Button
+        self.export_button = Button(self.export_dismiss_frame, text="Export",
+                                    font="Arial 12 bold")
+        self.export_button.grid(row=0, column=0)
+
+        # Dismiss Button
+        self.dismiss_button = Button(self.export_dismiss_frame, text="Dismiss",
+                                     font="Arial 12 bold", command=partial(self.close_history, partner))
+        self.dismiss_button.grid(row=0, column=1)
+
+
+    def close_history(self, partner):
+        # Put history button back to normal...
+        partner.history_button.config(state=NORMAL)
+        self.history_box.destroy()
+
+
+
         # Dismiss button (row 2)
         self.dismiss_btn = Button(self.history_frame, text="Dismiss",
                                   width=10, bg="orange", font="arial 10 bold",
