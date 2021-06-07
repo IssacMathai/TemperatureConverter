@@ -91,7 +91,7 @@ class Converter:
             to_convert = float(to_convert)
             has_errors = "no"
 
-            # Check and convert to Farhrenheit
+            # Check and convert to Fahrenheit
             if low == -273 and to_convert >= low:
                 fahrenheit = (to_convert * 9/5) + 32
                 to_convert = self.round_it(to_convert)
@@ -103,7 +103,7 @@ class Converter:
                 celsius = (to_convert - 32) * 5/9
                 to_convert = self.round_it(to_convert)
                 celsius = self.round_it(celsius)
-                answer = "{} degrees C is {} degrees F".format(to_convert, celsius)
+                answer = "{} degrees F is {} degrees C".format(to_convert, celsius)
 
             else:
                 # Input is invalid (too cold)!!
