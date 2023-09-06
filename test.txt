@@ -1,8 +1,0 @@
-5 degrees C is -15 degrees F
-5 degrees C is 41 degrees F
-50 degrees C is 10 degrees F
-50 degrees C is 122 degrees F
-2 degrees C is -16.7 degrees F
-2 degrees C is 35.6 degrees F
-27 degrees C is -2.8 degrees F
-27 degrees C is 80.6 degrees F
