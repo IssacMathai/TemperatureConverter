@@ -1,5 +1,4 @@
 # shows all colours
-# version 2: now scrolls thanks to Ruth Davies' son :)
  
 from tkinter import *
 
@@ -7,9 +6,7 @@ from tkinter import *
 class Colour_chart:
     
     def __init__(self,parent):
-
-        # list of colours...
-
+        """A List of colours"""
         COLORS  =['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'old lace',
             'linen', 'antique white', 'papaya whip', 'blanched almond', 'bisque', 'peach puff',
             'navajo white', 'lemon chiffon', 'mint cream', 'azure', 'alice blue', 'lavender',
@@ -102,11 +99,11 @@ class Colour_chart:
 
         self.colour_blocks=Frame(self.canvas)
 
-        # The window below is in the canvas and is needed for scrolling.
+        # The window below is in the canvas and is needed for scrolling
         self.canvas.create_window((0,0), window=self.colour_blocks, anchor="nw")
         self.canvas.pack(side=LEFT,expand=True,fill=BOTH)
 
-        # set up colour lables...
+        # Set up colour labels
         NUM_COL=10
 
         for i in range (len(COLORS)):
