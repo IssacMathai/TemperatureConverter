@@ -10,7 +10,7 @@ The code is structured around each GUI window having its own class. This allowed
 * re
 
 **Screenshots:**
-<img src="Screenshots/main.png" height="330">  <img src="Screenshots/help.png" height="330">  <img src="Screenshots/history.png" height="330">
+<img src="Screenshots/main.png" height="300">  <img src="Screenshots/help.png" height="300">  <img src="Screenshots/history.png" height="300">
 
 
 After creating this, I moved on to creating MysteryBoxGame to further improve my skills with Python and Tkinter.
